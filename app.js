@@ -5,7 +5,7 @@ const port = 3001;
 app.get('/', (req, res) => {
   res.send('Hello from Node.js and Express!');
 });
-
+//check
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
