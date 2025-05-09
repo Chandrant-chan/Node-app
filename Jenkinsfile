@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo "Running Docker container..."
                 sh "docker rm -f ${DOCKER_CONTAINER} || true"
-                sh "docker run -d -p 3000:8000 --name ${DOCKER_CONTAINER} ${DOCKER_IMAGE}"
+                sh "docker run -d -p 5001:3001 --name ${DOCKER_CONTAINER} ${DOCKER_IMAGE}"
             }
         }
 
